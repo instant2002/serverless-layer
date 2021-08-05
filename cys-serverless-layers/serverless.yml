@@ -1,0 +1,9 @@
+service: layers
+provider:
+  name: aws
+  runtime: nodejs12.x
+layers:
+  logging:
+    path: logging
+  hooks:
+    path: hooks
