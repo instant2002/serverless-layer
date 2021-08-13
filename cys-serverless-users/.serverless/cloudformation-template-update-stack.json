@@ -161,7 +161,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/cys-serverless-users/dev/1628174025669-2021-08-05T14:33:45.669Z/cys-serverless-users.zip"
+          "S3Key": "serverless/cys-serverless-users/dev/1628826523387-2021-08-13T03:48:43.387Z/cys-serverless-users.zip"
         },
         "Handler": "handler.users",
         "Runtime": "nodejs12.x",
@@ -182,14 +182,14 @@
         "UsersLogGroup"
       ]
     },
-    "UsersLambdaVersionNn9gnGDID65tcgiTwjQblmFOwI3VaF0x47P0fLwBFJw": {
+    "UsersLambdaVersion749uHYii8UOpXS2RvGMwH3R7swWlLF441Iwpjco": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "UsersLambdaFunction"
         },
-        "CodeSha256": "PWrDHu+TlvbtpEl1qBS+s26R4hXEpRf/2aEg5aA3qT0="
+        "CodeSha256": "gHL5rCLBLcz4ysnspeYtcMVWqsfFsd4iNHx3z/EJ8qs="
       }
     },
     "ApiGatewayRestApi": {
@@ -265,7 +265,7 @@
         "UsersLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1628174024261": {
+    "ApiGatewayDeployment1628826522542": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -327,7 +327,7 @@
     "UsersLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "UsersLambdaVersionNn9gnGDID65tcgiTwjQblmFOwI3VaF0x47P0fLwBFJw"
+        "Ref": "UsersLambdaVersion749uHYii8UOpXS2RvGMwH3R7swWlLF441Iwpjco"
       },
       "Export": {
         "Name": "sls-cys-serverless-users-dev-UsersLambdaFunctionQualifiedArn"

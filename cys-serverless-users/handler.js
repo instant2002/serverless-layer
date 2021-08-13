@@ -6,6 +6,7 @@ module.exports.users = async (event) => {
     body: JSON.stringify(
       {
         message: hooks.hooking(),
+        Case: event.Case
       },
       null,
       2

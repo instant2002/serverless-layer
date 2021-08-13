@@ -173,7 +173,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/cys-serverless-todos/dev/1628171871565-2021-08-05T13:57:51.565Z/cys-serverless-todos.zip"
+                "S3Key": "serverless/cys-serverless-todos/dev/1628826631692-2021-08-13T03:50:31.692Z/cys-serverless-todos.zip"
               },
               "Handler": "handler.todos",
               "Runtime": "nodejs12.x",
@@ -194,14 +194,14 @@
               "TodosLogGroup"
             ]
           },
-          "TodosLambdaVersionAYJ8D3wwhlls8RKLg9qt7Y1lX4knkboVdHkb989SY": {
+          "TodosLambdaVersionxPsLokKoNMpcUr2rhY9QSIxe874LsRtysuIDdB3g": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "TodosLambdaFunction"
               },
-              "CodeSha256": "fhovgXxF/54SzaBB17YCOjk5BUeGnhVdSopY2E/hLSA="
+              "CodeSha256": "xxbrZWPbdvPz8AoMHSeScco+02oaBFpTxATB5jD81Cg="
             }
           },
           "ApiGatewayRestApi": {
@@ -277,7 +277,7 @@
               "TodosLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1628171869725": {
+          "ApiGatewayDeployment1628826630415": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -339,7 +339,7 @@
           "TodosLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "TodosLambdaVersionAYJ8D3wwhlls8RKLg9qt7Y1lX4knkboVdHkb989SY"
+              "Ref": "TodosLambdaVersionxPsLokKoNMpcUr2rhY9QSIxe874LsRtysuIDdB3g"
             },
             "Export": {
               "Name": "sls-cys-serverless-todos-dev-TodosLambdaFunctionQualifiedArn"
@@ -479,7 +479,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "TodosLambdaVersionAYJ8D3wwhlls8RKLg9qt7Y1lX4knkboVdHkb989SY"
+        "versionLogicalId": "TodosLambdaVersionxPsLokKoNMpcUr2rhY9QSIxe874LsRtysuIDdB3g"
       }
     },
     "configValidationMode": "warn",
@@ -497,10 +497,10 @@
     },
     "layers": {},
     "isDashboardMonitoringPreconfigured": false,
-    "artifact": "/Users/yunsik/Desktop/study/lambda-layers/cys-serverless-todos/.serverless/cys-serverless-todos.zip"
+    "artifact": "/Users/yunsik/Desktop/studies/serverless-layer/cys-serverless-todos/.serverless/cys-serverless-todos.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/cys-serverless-todos/dev/1628171871565-2021-08-05T13:57:51.565Z",
+    "artifactDirectoryName": "serverless/cys-serverless-todos/dev/1628826631692-2021-08-13T03:50:31.692Z",
     "artifact": "cys-serverless-todos.zip"
   }
 }
